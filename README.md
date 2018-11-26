@@ -1,10 +1,10 @@
-#The Project Description
+# The Project Description
 
 The front end of this project will use HTML5 tags CSS3 animation and jQuery to create a comfortable and beautiful guiding and text game interface.
 
 The back end of this project will use Express.js to dynamically generate some pages and the score of player will be stored by using MongoDB.
 
-#How to add to the project
+# How to add to the project
 
 To avoid the merge issues the project requires contributors working on their own branch and install node modules on the local machine.
 
