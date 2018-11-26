@@ -1,0 +1,23 @@
+{
+  "name": "the-course",
+  "version": "1.0.0",
+  "description": "final project for CS 290. A progressive web game that require most of knowledge from CS 290 to pass the game. The project base on Express.js and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSU-CS290-F18/final-project-best-team.git"
+  },
+  "author": "Best team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OSU-CS290-F18/final-project-best-team/issues"
+  },
+  "homepage": "https://github.com/OSU-CS290-F18/final-project-best-team#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10"
+  }
+}
