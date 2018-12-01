@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cutest Cat</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel="stylesheet">
+
+    <link rel="stylesheet" href="styleOne.css">
+  </head>
+  <body>
+
+    <header>
+
+      <div class="header-image-container">
+        <img src="https://cdn.dribbble.com/users/189524/screenshots/2103470/01-black-cat_800x600_v1.gif" alt="Kitten logo">
+      </div>
+
+      <h1 class="site-title"><a href="#">Cutest Cat</a></h1>
+
+    </header>
+
+      <section id="posts">
+
+        <!--
+            <div class="Hint"><h1>Inspect the cutest cat</h1></div>
+        -->
+
+        <div class="post" data-price="" data-city="" data-condition="">
+          <div class="post-contents">
+            <div class="post-image-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cat_Janna.jpg/220px-Cat_Janna.jpg" alt="Russian Blue">
+            </div>
+            <div class="post-info-container">
+              <a href="#" class="post-title">Russian Blue</a> <span class="post-price">Spendy</span> <span class="post-city">(Arkhangelsk)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post" data-price="" data-city="" data-condition="">
+          <div class="post-contents">
+            <div class="post-image-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/White_Persian_Cat.jpg/220px-White_Persian_Cat.jpg" alt="Persian">
+            </div>
+            <div class="post-info-container">
+              <a href="#" class="post-title">Persian</a> <span class="post-price">Spendier</span> <span class="post-city">(Iran)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post" data-price="" data-city="" data-condition="">
+          <div class="post-contents">
+            <div class="post-image-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ragdoll_from_Gatil_Ragbelas.jpg/220px-Ragdoll_from_Gatil_Ragbelas.jpg" alt="Ragdoll">
+            </div>
+            <div class="post-info-container">
+              <a href="#" class="post-title">Ragdoll</a> <span class="post-price">Not Cheap</span> <span class="post-city">(California)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post" data-price="" data-city="" data-condition="">
+          <div class="post-contents">
+            <div class="post-image-container">
+              <img src="data:image/jpeg;base64,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" alt="British Short Hair">
+            </div>
+            <div class="post-info-container">
+              <a href="#" class="post-title">British Short Hair</a> <span class="post-price">Better</span> <span class="post-city">(Brittan)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post" data-price="" data-city="" data-condition="Cutest">
+          <div class="post-contents">
+            <div class="post-image-container">
+              <img src="https://petpricelist.com/wp-content/uploads/2017/12/scottish-fold-cat-1.jpg" alt="URL">
+            </div>
+            <div class="post-info-container">
+              <a href="#" class="post-title">Scottish Fold</a> <span class="post-price">Who Cares, look at it!</span> <span class="post-city">(Scottland)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post" data-price="" data-city="" data-condition="">
+          <div class="post-contents">
+            <div class="post-image-container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9JvzJlAVwI7LwExNq8XCNMKOxQQ6uGqkWI8O2wIoJS6UXyrv" alt="Maine Coon">
+            </div>
+            <div class="post-info-container">
+              <a href="#" class="post-title">Maine Coon</a> <span class="post-price">Spendy</span> <span class="post-city">(Maine)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post" data-price="" data-city="" data-condition="">
+          <div class="post-contents">
+            <div class="post-image-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/IC_Blue_Melody_Flipper_CHA_male_EX1_CACIB.jpg" alt="Chartreux">
+            </div>
+            <div class="post-info-container">
+              <a href="#" class="post-title">Chartreux</a> <span class="post-price">Not Cheap</span> <span class="post-city">(Eugene)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post" data-price="" data-city="" data-condition="">
+          <div class="post-contents">
+            <div class="post-image-container">
+              <img src="https://vetstreet.brightspotcdn.com/dims4/default/02bd838/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Fa3%2F767b00a33511e087a80050568d634f%2Ffile%2FSphynx-4-645mk062211.jpg" alt="Gross Cat">
+            </div>
+            <div class="post-info-container">
+              <a href="#" class="post-title">Sphynx</a> <span class="post-price">FREE!</span> <span class="post-city">(Toronto  )</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <button type="button" id="button"><i class="fa fa-plus"></i></button>
+
+  </body>
+
+</html>
