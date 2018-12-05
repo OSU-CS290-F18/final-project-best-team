@@ -17,7 +17,6 @@ After your work done in your branch, open a pull request to asking for code revi
 # How the project works
 
 
-
 # The audience of the project
 
 The CS290 students/Web Developers who try to have fun.
