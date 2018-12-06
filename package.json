@@ -2,7 +2,7 @@
   "name": "the-course",
   "version": "1.0.0",
   "description": "final project for CS 290. A progressive web game that require most of knowledge from CS 290 to pass the game. The project base on Express.js and MongoDB.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

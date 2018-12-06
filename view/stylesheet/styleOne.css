@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #f67811;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #000;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  header a {
+    color: #fff;
+  }
+  
+  .site-title {
+    font-family: "Roboto Slab", serif;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0 0 0 20px;
+    padding-top: 30px;
+  }
+  
+  .site-title a:hover {
+    text-decoration: none;
+  }
+  .header-image-container img
+  {
+      height: 150px;
+      width: 200px;
+  }
+  
+  .content {
+    display: flex;
+  }
+.post {
+    display: inline-block;
+    vertical-align: top;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+  }
+  
+  .post-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .post-image-container img {
+    max-height: 240px;
+    max-width: 300px;
+  }
+  
+  .post-info-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .post-price {
+    display: inline-block;
+    font-size: 80%;
+    padding: 3px;
+    margin: 3px 5px;
+    border: 1px solid #ababab;
+    border-radius: 3px;
+    background: #efefef;
+  }
