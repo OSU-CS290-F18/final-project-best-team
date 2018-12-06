@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #f67811;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #000;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  header a {
+    color: #fff;
+  }
+  
+  .site-title {
+    font-family: "Roboto Slab", serif;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0 0 0 20px;
+    padding-top: 30px;
+  }
+  
+  .site-title a:hover {
+    text-decoration: none;
+  }
+
+  .header-image-container img
+  {
+      height: 170px;
+      width: 150px;
+      background-color: white;
+  }
+  
+  .content {
+    display: flex;
+  }
+
+  .link{
+    display: inline;
+    vertical-align: top;
+    height: 300px;
+    width: 300px;
+  }
+ 
+  .post-contents {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+  }
+
+  .linkNext{
+    display: inline;
+     /* Warmer */
+    height: 300px;
+    background-color: white;
+    width: 300px;
+    vertical-align: top;
+  }
+  
+  .post-image-container img {
+    max-height: 100px;
+    max-width: 200px;
+  }
+
+  .linkBack{
+    display: inline;
+    height: 300px;
+    width: 300px;
+    vertical-align: top;
+
+  }
+  .post-info-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .post-price {
+    display: inline-block;
+    margin: 353px 511px;
+    border: 11px solid black;
+    border-radius: 3px;
+    background: white;
+    font-size: 80%;
+    padding: 3px;
+  }
