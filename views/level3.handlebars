@@ -1,0 +1,46 @@
+<head>
+    <link href="/css/level3.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center">
+        <span id="i-will-say-something-here" class="My-irony-is-always-effective"></span>
+    </div>
+    <div class="range">
+        <button id='runingb' class="why-dont-you-try-something-more-direct"></button>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script>
+    var typed = new Typed('#i-will-say-something-here', {
+        strings: ["I will say something here",
+            "^3000Humans,^1000 always want to press any button they have seen.^15000",
+            "If you still there maybe I will let you go.^10000",
+            "Just kidding.^30000",
+            "Why you still there.",
+            "You should press that button.",
+            "Yes, it is not easy to touch that button.",
+            "which is what I want to see.^5000",
+            "I am fed up, I will sent you to next level.^5000",
+            "Sorry, you know what, in fact, I can not do this. ^1000",
+            "I am just a typing robot.",
+            "Don't expecting to much to me.^30000",
+            "Alright, just delete that stupid javascript file and free me.^100000",
+            "Fine... I should go..."
+        ],
+        typeSpeed: 30,
+        backSpeed: 0
+    });
+    //DO NOT DELETE THIS CODE
+    //IT IS A IMPORTANT FEATURE
+    const butt = document.getElementById('runingb');
+    butt.addEventListener('mouseover', () => {
+        var aw = document.body.clientWidth || document.documentElement.clientWidth;
+        var ah = document.body.clientHeight || document.documentElement.clientHeight;
+        var randtop = Math.floor(Math.random() * ah);
+        var randleft = Math.floor(Math.random() * aw);
+        butt.style.top = randtop + 'px';
+        butt.style.left = randleft + 'px';
+    });
+</script>
+<script src="/js/dont-delete-me.js"></script>
