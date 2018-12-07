@@ -26,46 +26,46 @@ mdb = {
     },
 
 
-    writeRecord : (user) => {
+    writeRecord : (user, callback) => {
         MongoClient.connect(dbURL, function (err, db) {
             if (err) throw err;
-            //console.log("Database connectted.");
             var dbase = db.db(name);
             var uobj = {
-                uname: user.name,
+                name: user.name,
                 time: user.time
             }
             dbase.collection(collection_n).insertOne(uobj, (err, res) => {
                 if (err) throw err;
-                //console.log("user info inserted.");
+                console.log("write");
                 db.close();
+                callback();
             });
         });
     },
 
-    getRankList : (list) => {
-         
+    getRankList : (callback) => {
         MongoClient.connect(dbURL, function (err, db) {
             if (err) throw err;
             var dbase = db.db(dbInfo.name);
             var rankSort = { time: 1 }; //Ascending according to time
             dbase.collection(collection_n).find().sort(rankSort).toArray((err, result) => {
                 if (err) throw err;
-                db.close();
                 console.log(result);
-                list = result;
+                db.close();
+                callback(result);
             });
         });
+
     },
 
     delete_user: (user) => {
         MongoClient.connect(dbURL, function (err, db) {
             if (err) throw err;
             var dbase = db.db(dbInfo.name);
-            var where = { uname: user.name }; 
+            var where = { name: user.name }; 
             dbase.collection(collection_n).deleteOne(where, (err, obj) =>{
                 if (err) throw err;
-                
+                console.log('deleted'+user.name);
                 db.close();
             });
         });
