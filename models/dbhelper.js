@@ -8,9 +8,9 @@ var password = dbInfo.password;
 var name = dbInfo.name;
 var collection_n = dbInfo.collection;
 
-console.log(dbInfo.password);
+//console.log(dbInfo.password);
 var dbURL = "mongodb+srv://" + username + ":" + password + "@" + host;
-console.log(dbURL);
+//console.log(dbURL);
 mdb = {
     createDB : () => {
         MongoClient.connect(dbURL, function (err, db) {
@@ -27,7 +27,6 @@ mdb = {
 
 
     writeRecord : (user) => {
-         ;
         MongoClient.connect(dbURL, function (err, db) {
             if (err) throw err;
             //console.log("Database connectted.");
