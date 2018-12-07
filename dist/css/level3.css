@@ -1,0 +1,70 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+@keyframes pound {
+    50% {transform: scale(1.4);}
+}
+
+@keyframes disappear {
+    to {transform: scale(0);}
+}
+
+@keyframes show {
+}
+
+#i-will-say-something-here{
+    white-space: pre;
+    font-size: 40px;
+}
+.typed-cursor {
+    font-size: 40px;
+}
+
+.center {
+    display: block;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: #ccc 1px solid;
+    height: 50px;
+}
+
+.range {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.why-dont-you-try-something-more-direct {
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    min-width: 0;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    flex-shrink: 0;
+    background-color: #ff4081;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    position: absolute;
+    left: auto;
+    top: auto;
+    animation: pound .4s 2;
+}

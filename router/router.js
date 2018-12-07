@@ -8,9 +8,9 @@ router.get('/', (req, res, next) => {
     else if (req.cookies.stage === '2')
         res.status(200).render('l');
     else if (req.cookies.stage === '3')
-        res.status(404);//TODO: Js page
+        res.status(200).render('level3');//TODO: Js page
     else if (req.cookies.stage === '4')
-        res.status(404);//TODO: node page
+        res.status(404).send("You are one level 4");
     else if (req.cookies.stage === '5')
         res.status(404);//TODO: ranklist
     else
@@ -47,6 +47,16 @@ router.get('/jspart', (req, res) => {
     else if (req.cookies.stage === '2') {
         console.log('hit');
         res.cookie("stage", 3);
+        res.redirect('/');
+    }
+})
+
+router.get('/clicked', (req, res) => {
+    if (req.cookies.stage != 3)
+        res.status(404).send("not found");
+    else if (req.cookies.stage === '3') {
+        console.log('hit');
+        res.cookie("stage", 4);
         res.redirect('/');
     }
 })
