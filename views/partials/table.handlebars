@@ -1,0 +1,23 @@
+<div class="table-container">
+    <table class="ranklist">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Player Name</th>
+                <th>Time Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each users}}
+            {{#if name}}
+            <tr>
+                <td>{{@index}}</td>
+                <td>@{{name}}</td>
+                <td>{{time}} mins</td>
+            </tr>
+            {{/if}}
+            {{/each}}
+        </tbody>
+    </table>
+    <div></div>
+</div>
