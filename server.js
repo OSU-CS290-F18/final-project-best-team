@@ -1,5 +1,4 @@
 let express = require("express");
-let mdb = require("./models/dbhelper");
 var cookieParser = require("cookie-parser");
 var exphbs = require('express-handlebars');
 var router = require("./router/router")
